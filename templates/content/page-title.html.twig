@@ -12,8 +12,11 @@
  *   displayed after the main title tag that appears in the template.
  */
 #}
-{% include "@atoms/00-type/00-heading-1.twig"
+{% include "@atoms/00-type/01-heading.twig"
   with {
-    "heading": title
+    heading: {
+      label: title,
+      level: 1,
+    }
   }
 %}

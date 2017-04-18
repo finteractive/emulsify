@@ -25,6 +25,18 @@ $blue-xlight: #b9b9e2;
 // Red
 $red: #a00000;
 
+//Social
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$instagram: #405de6;
+$google: #ea4335;
+$linkedin: #0077b5;
+$youtube: #cd201f;
+$mail: #5d5c5d;
+$pinterest: #bd081c;
+$vine: #00b488;
+
+
 
 
 // Array of colors for /00-base/02-mixins/_debug-layout.scss
@@ -57,4 +69,15 @@ $palettes: (
   red: (
     base: $red,
   ),
+  social: (
+    facebook: $facebook,
+    twitter: $twitter,
+    instagram: $instagram,
+    google: $google,
+    linkedin: $linkedin,
+    youtube: $youtube,
+    mail: $mail,
+    pinterest: $pinterest,
+    vine: $vine,
+  )
 );

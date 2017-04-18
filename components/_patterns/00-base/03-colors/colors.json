@@ -63,6 +63,42 @@
     {
       "name": "$red",
       "value": "#a00000"
+    },
+    {
+      "name": "$facebook",
+      "value": "#3b5998"
+    },
+    {
+      "name": "$twitter",
+      "value": "#1da1f2"
+    },
+    {
+      "name": "$instagram",
+      "value": "#405de6"
+    },
+    {
+      "name": "$google",
+      "value": "#ea4335"
+    },
+    {
+      "name": "$linkedin",
+      "value": "#0077b5"
+    },
+    {
+      "name": "$youtube",
+      "value": "#cd201f"
+    },
+    {
+      "name": "$mail",
+      "value": "#5d5c5d"
+    },
+    {
+      "name": "$pinterest",
+      "value": "#bd081c"
+    },
+    {
+      "name": "$vine",
+      "value": "#00b488"
     }
   ],
   "meta": {

@@ -1,0 +1,5 @@
+heading:
+  label: "Heading - Level 1, Centered"
+  level: 1 #default: 2
+  align: "center" #default: left
+

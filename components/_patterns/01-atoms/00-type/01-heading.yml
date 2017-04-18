@@ -1,0 +1,4 @@
+heading:
+  label: "Heading - Default heading is H2 and left aligned"
+  level: 2 #default: 2
+  align: "left" #default: left

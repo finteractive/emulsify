@@ -1,0 +1,21 @@
+options:
+  -
+    selected: TRUE
+    type: option
+    value: ""
+    label: "-select-"
+  -
+    select: FALSE
+    type: option
+    value: "option 1"
+    label: "Label 1"
+  -
+    select: FALSE
+    type: option
+    value: "option 2"
+    label: "Label 2"
+  -
+    select: FALSE
+    type: option
+    value: "option 3"
+    label: "Label 3"

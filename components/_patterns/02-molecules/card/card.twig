@@ -1,3 +1,7 @@
+{% if sg_wrapper %}
+  <div class="{{ sg_wrapper }}">
+{% endif %}
+
 <div class="m-card">
   <a href="{{ card_url }}" class="m-card__banner" aria-labelby="{{ card_id }}">
     <span class="u-visually--hidden">banner image</span>
@@ -6,7 +10,7 @@
 
   <div class="m-card__info">
     <div class="m-card__title">
-      {% include "@atoms/00-type/00-heading.twig"
+      {% include "@atoms/00-type/01-heading.twig"
         with {
           heading: {
             label: card_title,
@@ -21,3 +25,7 @@
     <div class="m-card__body">{{ card_text }}</div>
   </div>
 </div>
+
+{% if sg_wrapper %}
+  </div>
+{% endif %}

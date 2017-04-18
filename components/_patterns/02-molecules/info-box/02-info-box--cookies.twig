@@ -1,0 +1,21 @@
+{% embed '@molecules/info-box/00-info-box.twig'
+  with {
+    infobox_variation: '--cookies',
+    sg_wrapper: sg_wrapper
+  }
+%}
+
+  {% block infobox_text %}
+    <div class="m-info-box--cookies__message">
+      {# <p>{{message}} <a data-cc-if="options.link" target="{{ target }}" href="{{ link }}">{{ learn_more }}</a></p> #}
+      <p>
+        {% trans %}This site uses cookies to provide you with a more responsive and personalized service. By using this site you agree to our use of cookies. Please <a data-cc-if="options.link" target="_blank" href='https://www2.deloitte.com/ca/en/footerlinks1/cookies.html'>read our cookie notice</a> for more information on the cookies we use and how to delete or block them.{% endtrans %}
+      </p>
+    </div>
+    <div class="m-info-box--cookies__dismiss">
+      {# <a class="a-btn" href="#null" data-cc-event="click:dismiss" target="_blank">{{ dismiss }}</a> #}
+      <a class="a-btn" href="#null" data-cc-event="click:dismiss" target="_blank">{% trans %}Accept and close{% endtrans %}</a>
+    </div>
+  {% endblock %}
+
+{% endembed %}

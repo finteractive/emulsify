@@ -1,0 +1,16 @@
+%a-textfield,
+.a-textfield {
+  border: 1px solid palette(grey);
+  padding: ru(0.5);
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+
+  &.is-invalid {
+    border-color: red;
+    color: red;
+  }
+}

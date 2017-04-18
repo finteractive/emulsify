@@ -1,0 +1,12 @@
+%l-max-width {
+  margin-right: auto;
+  margin-left: auto;
+  // padding-right: $gutter / 2;
+  // padding-left: $gutter / 2;
+  max-width: $bp-max;
+
+  // @include breakpoint ($bp-max + $gutter-px) {
+  //   padding-right: 0;
+  //   padding-left: 0;
+  // }
+}

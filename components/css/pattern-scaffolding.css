@@ -84,20 +84,26 @@
 .sg__wrapper {
   position: relative;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1.57143rem;
+}
+
+.sg__wrapper--no-pad {
+  position: relative;
+  background-color: #f8f8f8;
+  margin-bottom: 2rem;
 }
 
 .sg__wrapper--xlight-grey {
   position: relative;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1.57143rem;
   background-color: #f8f8f8;
 }
 
 .sg__wrapper--xlight-grey--border {
   position: relative;
   margin-bottom: 2rem;
-  padding: 0 1rem;
+  padding: 0 1.57143rem;
   background-color: #f8f8f8;
   border: 1px solid #e4e4e4;
 }
@@ -106,9 +112,58 @@
   background-color: #f8f8f8;
 }
 
+.sg__wrapper--white {
+  background-color: #ffffff;
+  padding:  1.57143rem;
+}
+
+.sg__wrapper--black {
+  background-color: #000000;
+  padding:  1.57143rem;
+}
+
+.sg__wrapper--medium-black {
+  background-color: #000000;
+  padding:  1.57143rem;
+  max-width: 600px;
+}
+
+
+
+.sg__wrapper--aqua {
+  background-color: #0097a9;
+  padding:  1.57143rem;
+}
+
+.sg__wrapper--blue {
+  background-color: #005587;
+  padding:  1.57143rem;
+}
+
+.sg__wrapper--green {
+  background-color: #43b02a;
+  padding:  1.57143rem;
+}
+
+.sg__wrapper--purple {
+  background-color: #012169;
+  padding:  1.57143rem;
+}
+
+.sg__wrapper--grey {
+  background-color: #63666a;
+  padding:  1.57143rem;
+}
+
+
 .sg__wrapper--sml-light-grey {
   background-color: #f8f8f8;
   max-width: 300px;
+}
+
+.sg__wrapper--sml-green {
+  background-color: #43b02a;
+  max-width: 400px;
 }
 
 .sg__wrapper--eq {

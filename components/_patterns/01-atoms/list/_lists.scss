@@ -46,7 +46,6 @@
       position: absolute;
       top: 0;
       left: ru(-1);
-      // color: $color-primary;
       content: counter(list) '.';
       counter-increment: list;
     }

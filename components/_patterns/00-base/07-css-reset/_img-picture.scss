@@ -1,0 +1,15 @@
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE <11.
+ */
+
+img,
+figure,
+picture {
+  display: block;
+  border-style: none;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,93 @@
+/* Form Elements Reset
+--------------------------------------------- */
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+select,
+textarea {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-primary-light;
+  border-radius: 0;
+  padding: ru(0.5);
+  width: 100%;
+  color: $black;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  box-shadow: none;
+}
+
+select {
+  background-image: url('img/icons/src/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: right ru(0.5) center;
+  background-size: ru(0.6) ru(0.6);
+  padding: ru(0.3) ru(0.5);
+  height: ru(1.84);
+  border-image: none;
+  appearance: none;
+}
+
+input[type='color']:hover,
+input[type='date']:hover,
+input[type='datetime']:hover,
+input[type='datetime-local']:hover,
+input[type='email']:hover,
+input[type='month']:hover,
+input[type='number']:hover,
+input[type='password']:hover,
+input[type='search']:hover,
+input[type='tel']:hover,
+input[type='text']:hover,
+input[type='time']:hover,
+input[type='url']:hover,
+input[type='week']:hover,
+textarea:hover,
+select:hover {
+  border-color: $color-primary-light;
+}
+
+input[type='color']:focus,
+input[type='date']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='email']:focus,
+input[type='month']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='time']:focus,
+input[type='url']:focus,
+input[type='week']:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: $color-primary;
+  box-shadow: none;
+}
+
+input[type='checkbox'],
+input[type='image'],
+input[type='radio'] {
+  width: auto;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  color: $color-primary-xlight;
+  font-weight: $base-font-weight;
+}

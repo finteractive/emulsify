@@ -54,8 +54,14 @@ $bp-max: 1200px; // Max width of outer container
 
 
 // // Must enable debug setting
-@include sgs-change('debug', true);
+// @include sgs-change('debug', true);
 
+// Gutters (Apply manualy)
+// Gutter for a single column
+
+$gutter-px: $base-line-height * 4;
+$gutter: ru(4);
+$column: 1/15 * 100% // 15 column layout
 
 
 

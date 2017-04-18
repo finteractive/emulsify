@@ -11,9 +11,7 @@ global.paths = {
   relative: './',
   themeDir: themeDir,
   js: [
-    themeDir + '/components/_patterns/00-base/global/*.js',
-    themeDir + '/components/_patterns/**/*.js',
-    themeDir + '/js/**/*.js',
+    themeDir + 'components/_patterns/**/*.js',
   ],
   sass: themeDir,
   img: themeDir + '/images',

@@ -1,23 +1,118 @@
-.info-box  {
-  margin-bottom: 2%;
-  background-color: $color-primary-xxxlight;
-  padding: 1em;
+%m-info-box,
+.m-info-box {
+  background-color: palette(grey, light);
+  padding: ru(1);
   width: 100%;
+  color: $white;
 
-  // @include medium {
-  //   flex: 1 0 43%;
-  //   margin: 0 2% 2% 0;
-  //   width: auto;
-
-  //   &:nth-child(2n+1),
-  //   &:last-child {
-  //     margin-right: 0;
-  //   }
-  // }
+  @include respond-to('large') {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
-.info-box__title {
-  text-align: center;
-  color: $color-primary;
-  font-weight: 400;
+.m-info-box__wrapper {
+  @extend %l-max-width;
+
+  @include respond-to('large') {
+    padding: 0 $gutter;
+  }
 }
+
+.m-info-box__title {
+  @extend %a-heading__h2;
+  color: $white;
+}
+
+.m-info-box__text {
+  @extend %u-remove-child--margin-top-bottom;
+}
+
+
+//Browser update message
+.m-info-box--browser {
+  @extend %m-info-box;
+
+  background-color: palette(blue, dark);
+
+  a {
+    // @extend %a-link--white-on-blue-dark;
+  }
+}
+
+//Cookies message
+
+//Default wrapper from module - cannot be changed.
+.cc_banner-wrapper {
+  position: relative;
+  z-index: 9001;
+}
+
+.m-info-box--cookies {
+  @extend %m-info-box;
+
+  position: relative;
+  top: 0;
+  border-bottom: 1px solid palette(grey, xxxlight);
+  background-color: $white;
+  color: $black;
+  animation-name: slideDown;
+  animation-duration: 0.8s;
+
+  .m-info-box__text {
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to('type-large') {
+      flex-direction: row;
+    }
+  }
+
+}
+
+.m-info-box--cookies__message {
+  @extend %u-remove-child--margin-top-bottom;
+
+  flex-grow: 1;
+  margin-bottom: ru(1);
+
+  a {
+    // @extend %a-link--blue-on-white;
+  }
+
+  @include respond-to('type-large') {
+    margin-bottom: 0;
+    width: 60%;
+  }
+
+  @include respond-to('large') {
+    width: 75%;
+  }
+}
+
+.m-info-box--cookies__dismiss {
+  flex-grow: 1;
+
+  @include respond-to('type-large') {
+    align-self: center;
+    padding-left: ru(1);
+    width: 40%;
+    text-align: center;
+  }
+
+  @include respond-to('large') {
+    width: 25%;
+  }
+}
+
+//Slide down animation for cookies message
+@keyframes slideDown {
+  0% {
+    transform: translateY(ru(-3));
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
