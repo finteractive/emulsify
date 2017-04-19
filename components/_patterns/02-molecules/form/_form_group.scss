@@ -3,13 +3,6 @@
   margin-bottom: ru(1);
 }
 
-// .m-form-group__wrapper {
-//   .is-invalid & {
-//     border: 1px solid palette(red, light);
-//     padding: ru(0.25);
-//   }
-// }
-
 .m-form-group__label {
   @extend %m-form-item__label;
 }
@@ -19,7 +12,7 @@
 }
 
 .m-form-group__error {
-  // @extend %m-form-item__error;
+  @extend %a-error-message;
 }
 
 
