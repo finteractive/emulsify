@@ -25,11 +25,12 @@
     {% endif %}
 
     {% if gentle_form %}
-      <div class="m-form-group__error" data-errors-for="{{ name }}">
-        {% if gentle_form.required %}
-          <span data-errors-when="valueMissing">{{ gentle_form.required }}</span>
-        {% endif %}
-      </div>
+      {% include "@atoms/form/error-message/00-error-message.twig"
+        with {
+          gentle_form: gentle_form,
+          name: name
+        }
+      %}
     {% endif %}
 
     {% if description.content %}

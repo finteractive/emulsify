@@ -1,0 +1,3 @@
+gentle_form:
+  required: "This field is required"
+name: input_name

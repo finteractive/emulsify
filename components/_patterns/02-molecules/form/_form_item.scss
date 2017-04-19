@@ -22,11 +22,6 @@
   }
 }
 
-%m-form-item__error,
-.m-form-item__error {
-  color: palette(red, light);
-}
-
 %m-form-item__description,
 .m-form-item__description {
   @extend %a-type--small;

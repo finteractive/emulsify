@@ -1,0 +1,11 @@
+<div class="a-error-message" data-errors-for="{{ name }}">
+  {% if gentle_form.required %}
+    <span data-errors-when="valueMissing">{{ gentle_form.required }}</span>
+  {% endif %}
+  {% if gentle_form.type_mismatch %}
+    <span data-errors-when="typeMismatch">{{ gentle_form.type_mismatch }}</span>
+  {% endif %}
+  {% if gentle_form.pattern_mismatch %}
+    <span data-errors-when="patternMismatch">{{ gentle_form.pattern_mismatch.message }}</span>
+  {% endif %}
+</div>

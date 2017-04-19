@@ -1,0 +1,6 @@
+gentle_form:
+  required: "This field is required"
+  pattern_mismatch:
+    message: "Regex mismatch"
+  type_mismatch: "Wrong Type (e.g - A valid email is required)"
+name: input_name

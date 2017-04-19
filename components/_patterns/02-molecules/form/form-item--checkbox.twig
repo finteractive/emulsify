@@ -31,17 +31,12 @@
   {% endif %}
 
   {% if gentle_form %}
-    <div class="m-form-item__error" data-errors-for="{{ name }}">
-      {% if gentle_form.required %}
-        <span data-errors-when="valueMissing">{{ gentle_form.required }}</span>
-      {% endif %}
-      {% if gentle_form.type_mismatch %}
-        <span data-errors-when="typeMismatch">{{ gentle_form.type_mismatch }}</span>
-      {% endif %}
-      {% if gentle_form.pattern_mismatch %}
-        <span data-errors-when="patternMismatch">{{ gentle_form.pattern_mismatch.message }}</span>
-      {% endif %}
-    </div>
+    {% include "@atoms/form/error-message/00-error-message.twig"
+      with {
+        gentle_form: gentle_form,
+        name: name
+      }
+    %}
   {% endif %}
 
   {% if description_display in ['after', 'invisible'] and description.content %}

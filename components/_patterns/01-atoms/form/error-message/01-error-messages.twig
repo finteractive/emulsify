@@ -1,0 +1,16 @@
+<h3>Missing Value Error</h3>
+<div class="a-error-message" data-errors-for="{{ name }}">
+  <span data-errors-when="valueMissing">{{ gentle_form.required }}</span>
+</div>
+<br/>
+
+<h3>Type Mismatch Error</h3>
+<div class="a-error-message" data-errors-for="{{ name }}">
+  <span data-errors-when="typeMismatch">{{ gentle_form.type_mismatch }}</span>
+</div>
+<br/>
+
+<h3>Pattern Mismatch Error</h3>
+<div class="a-error-message" data-errors-for="{{ name }}">
+  <span data-errors-when="patternMismatch">{{ gentle_form.pattern_mismatch.message }}</span>
+</div>
