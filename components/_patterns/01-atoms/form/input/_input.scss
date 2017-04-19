@@ -1,0 +1,47 @@
+%a-input,
+.a-input {
+  border-color: palette(grey, light);
+  padding: ru(0.5);
+  -webkit-appearance: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+
+  &.is-invalid {
+    border-color: palette(red, light);
+    color: palette(red, light);
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+  }
+}
+
+%a-input--is-required,
+.a-input--is-required {
+  @extend %a-input;
+}
+
+
+%a-input-submit--text,
+.a-input-submit--text {
+  @extend %a-link;
+  @extend %a-type--xlarge;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  -webkit-appearance: none;
+  white-space: normal;
+
+  &:visited,
+  &:hover,
+  &:active {
+    outline: none;
+  }
+
+}

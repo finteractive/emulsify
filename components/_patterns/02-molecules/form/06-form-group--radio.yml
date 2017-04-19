@@ -1,0 +1,108 @@
+sg_wrapper: sg_wrapper--forms
+name: radio-group
+required: TRUE
+classes: is-invalid
+attributes:
+  Attribute():
+    class: []
+legend:
+  title: Title of the radio group
+  attributes:
+    Attribute():
+      class: []
+legend_span:
+  attributes:
+    Attribute():
+      class: []
+legend_span_classes: legend_span_class
+children:
+  join():
+    - include():
+        pattern: 'molecules-form-item--radio'
+        with:
+          label:
+            join():
+              - include():
+                  pattern: atoms-label
+                  with:
+                    label_title: Radio One One Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.
+                    attributes:
+                      Attribute():
+                        for: radio_one_g
+                        class: ['a-label--is-required']
+          children:
+            join():
+              - include():
+                  pattern: atoms-input
+                  with:
+                    attributes:
+                      Attribute():
+                        required: required
+                        aria-required: true
+                        type: radio
+                        id: radio_one_g
+                        name: radio_group
+          gentle_form:
+            required: This field is required
+    - include():
+        pattern: 'molecules-form-item--radio'
+        with:
+          label:
+            join():
+              - include():
+                  pattern: atoms-label
+                  with:
+                    label_title: Radio Two
+                    attributes:
+                      Attribute():
+                        for: radio_two
+                        class: ['a-label--is-required']
+          children:
+            join():
+              - include():
+                  pattern: atoms-input
+                  with:
+                    attributes:
+                      Attribute():
+                        required: required
+                        aria-required: true
+                        type: radio
+                        id: radio_two
+                        name: radio_group
+          gentle_form:
+            required: This field is required
+    - include():
+        pattern: 'molecules-form-item--radio'
+        with:
+          label:
+            join():
+              - include():
+                  pattern: atoms-label
+                  with:
+                    label_title: Radio Three
+                    attributes:
+                      Attribute():
+                        for: radio_three
+                        class: ['a-label--is-required']
+          children:
+            join():
+              - include():
+                  pattern: atoms-input
+                  with:
+                    attributes:
+                      Attribute():
+                        required: required
+                        aria-required: true
+                        type: radio
+                        id: radio_three
+                        name: radio_group
+          gentle_form:
+            required: This field is required
+description:
+  content: This is the description of a radio group
+  attributes:
+    Attribute():
+      class: []
+gentle_form:
+  required: This field is required.
+

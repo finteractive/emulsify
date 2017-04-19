@@ -1,0 +1,31 @@
+{% if sg_wrapper %}
+<div class="sg_wrapper--forms">
+{% endif %}
+
+<div{{ attributes.addClass(classes).addClass('m-form-item--radio') }} data-states-for="{{ name }}">
+
+  {% if label_display in ['before', 'invisible'] %}
+    {{ label }}
+  {% endif %}
+
+  {% if prefix is not empty %}
+    <span class="m-form-item__prefix">{{ prefix }}</span>
+  {% endif %}
+
+  {% if children %}
+    {{ children }}
+  {% endif %}
+
+  {% if suffix is not empty %}
+    <span class="m-form-item__suffix">{{ suffix }}</span>
+  {% endif %}
+
+  {% if label_display == 'after' %}
+      {{ label }}
+  {% endif %}
+
+</div>
+
+{% if sg_wrapper %}
+</div>
+{% endif %}

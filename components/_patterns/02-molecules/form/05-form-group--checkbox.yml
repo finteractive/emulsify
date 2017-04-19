@@ -1,0 +1,107 @@
+sg_wrapper: sg_wrapper--forms
+required: TRUE
+attributes:
+  Attribute():
+    class: []
+legend:
+  title: Title of the checkbox group
+  attributes:
+    Attribute():
+      class: []
+legend_span:
+  attributes:
+    Attribute():
+      class: []
+legend_span_classes: legend_span_class
+children:
+  join():
+    - include():
+        pattern: 'molecules-form-item--checkbox'
+        with:
+          label:
+            join():
+              - include():
+                  pattern: atoms-label
+                  with:
+                    label_title: Checkbox One One Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.
+                    attributes:
+                      Attribute():
+                        for: checkox_one_g
+                        class: ['a-label--is-required']
+          children:
+            join():
+              - include():
+                  pattern: atoms-input
+                  with:
+                    attributes:
+                      Attribute():
+                        required: required
+                        aria-required: true
+                        type: checkbox
+                        id: checkox_one_g
+                        name: checkox_one_g
+                        value: Checkbox One
+          gentle_form:
+            required: This field is required
+    - include():
+        pattern: 'molecules-form-item--checkbox'
+        with:
+          label:
+            join():
+              - include():
+                  pattern: atoms-label
+                  with:
+                    label_title: Checkbox Two
+                    attributes:
+                      Attribute():
+                        for: checkox_two
+                        class: ['a-label--is-required']
+          children:
+            join():
+              - include():
+                  pattern: atoms-input
+                  with:
+                    attributes:
+                      Attribute():
+                        required: required
+                        aria-required: true
+                        type: checkbox
+                        id: checkox_two
+                        name: checkox_two
+                        value: Checkbox Two
+          gentle_form:
+            required: This field is required
+    - include():
+        pattern: 'molecules-form-item--checkbox'
+        with:
+          label:
+            join():
+              - include():
+                  pattern: atoms-label
+                  with:
+                    label_title: Checkbox Three
+                    attributes:
+                      Attribute():
+                        for: checkox_three
+                        class: ['a-label--is-required']
+          children:
+            join():
+              - include():
+                  pattern: atoms-input
+                  with:
+                    attributes:
+                      Attribute():
+                        required: required
+                        aria-required: true
+                        type: checkbox
+                        id: checkox_three
+                        name: checkox_three
+                        value: Checkbox Three
+          gentle_form:
+            required: This field is required
+description:
+  content: This is the description of a checkbox group
+  attributes:
+    Attribute():
+      class: []
+

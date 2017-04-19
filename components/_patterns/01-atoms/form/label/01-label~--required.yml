@@ -1,0 +1,5 @@
+label_title: "Default label"
+required: TRUE
+attributes:
+  Attribute():
+    class: ['a-label--is-required']

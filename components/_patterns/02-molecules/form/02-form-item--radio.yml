@@ -1,0 +1,34 @@
+sg_wrapper: sg_wrapper--forms
+name: radio_option
+attributes:
+  Attribute():
+    class: []
+label_display: after #By default is "after" for radios but can also be "before" or "invisible"
+label:
+  join():
+    - include():
+        pattern: atoms-label
+        with:
+          label_title: Radio One
+          attributes:
+            Attribute():
+              for: radio_one
+              class: ['a-label--is-required']
+#prefix: "PL prefix" #Optional
+#suffix: "PL suffix" #Optional
+children:
+  join():
+    - include():
+        pattern: atoms-input
+        with:
+          attributes:
+            Attribute():
+              required: required
+              aria-required: true
+              type: radio
+              id: radio_one
+              name: radio one
+              value: 1
+gentle_form:
+  required: This field is required
+

@@ -11,12 +11,12 @@
     'woff': '/fonts/roboto/Roboto-Regular-webfont.woff'
 ));
 
-@include font-face('Roboto', (
+@include font-face('Roboto-italic', (
     // 'ttf': '/fonts/roboto/Roboto-Italic-webfont',
     'woff': '/fonts/roboto/Roboto-Italic-webfont.woff'
 ), italic);
 
-@include font-face('Roboto', (
+@include font-face('Roboto-bold', (
     // 'ttf': '/fonts/roboto/Roboto-Bold-webfont',
     'woff': '/fonts/roboto/Roboto-Bold-webfont.woff'
 ), bold);

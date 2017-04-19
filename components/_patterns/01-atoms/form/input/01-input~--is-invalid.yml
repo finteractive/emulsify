@@ -1,0 +1,12 @@
+attributes:
+  Attribute():
+    class: ['a-input--is-required is-invalid']
+    type: text
+    id: textfield_input
+    name: textfield_input
+    value: ""
+    size: 60
+    maxlength: 128
+    placeholder: Pa-input is-laceholder for is-invalid textfield
+    required: required
+    aria-required: true

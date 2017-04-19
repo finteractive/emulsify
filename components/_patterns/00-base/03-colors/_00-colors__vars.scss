@@ -23,7 +23,9 @@ $blue-light: #7373c6;
 $blue-xlight: #b9b9e2;
 
 // Red
-$red: #a00000;
+$red-light: #ff3333;
+$red: #ff0000;
+$red-dark: #cc0000;
 
 //Social
 $facebook: #3b5998;
@@ -68,6 +70,8 @@ $palettes: (
   ),
   red: (
     base: $red,
+    light: $red-light,
+    dark: $red-dark,
   ),
   social: (
     facebook: $facebook,

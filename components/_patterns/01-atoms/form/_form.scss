@@ -1,5 +1,15 @@
 /* Form Elements Reset
 --------------------------------------------- */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0; /* 2 */
+  font: inherit; /* 1 */
+  -webkit-appearance: none;
+}
+
 input[type='color'],
 input[type='date'],
 input[type='datetime'],
@@ -18,7 +28,7 @@ select,
 textarea {
   border-width: 1px;
   border-style: solid;
-  border-color: $color-primary-light;
+  // border-color: $color-primary-light;
   border-radius: 0;
   padding: ru(0.5);
   width: 100%;
@@ -29,7 +39,8 @@ textarea {
 }
 
 select {
-  background-image: url('img/icons/src/chevron-down.svg');
+  background-color: $white;
+  background-image: url('/assets/img/icons/src/chevron-down.svg');
   background-repeat: no-repeat;
   background-position: right ru(0.5) center;
   background-size: ru(0.6) ru(0.6);
@@ -55,7 +66,7 @@ input[type='url']:hover,
 input[type='week']:hover,
 textarea:hover,
 select:hover {
-  border-color: $color-primary-light;
+  // border-color: $color-primary-light;
 }
 
 input[type='color']:focus,
@@ -75,7 +86,6 @@ input[type='week']:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: $color-primary;
   box-shadow: none;
 }
 
@@ -90,4 +100,13 @@ textarea::-webkit-input-placeholder {
   opacity: 1;
   color: $color-primary-xlight;
   font-weight: $base-font-weight;
+}
+
+// Checkboxes & Radios
+input[type='checkbox'],
+input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
 }

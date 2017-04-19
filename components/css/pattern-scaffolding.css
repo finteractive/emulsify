@@ -175,6 +175,10 @@
   max-width: 900px;
 }
 
+.sg_wrapper--forms {
+  max-width: 500px;
+}
+
 /***** DEMO CLASSES *****/
 
 /* Used for header section*/

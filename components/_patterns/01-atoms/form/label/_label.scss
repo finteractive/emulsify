@@ -1,0 +1,25 @@
+%a-label,
+.a-label {
+  display: block;
+  font-weight: $title-font-weight;
+
+  .is-required {
+    color: palette(red);
+  }
+}
+
+
+%a-label--is-required,
+.a-label--is-required {
+  @extend %a-label;
+
+  > span {
+    @extend %a-type--small;
+    font-weight: $base-font-weight;
+
+    &.is-required {
+      color: palette(red);
+    }
+  }
+}
+

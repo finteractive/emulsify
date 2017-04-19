@@ -1,0 +1,35 @@
+{% if sg_wrapper %}
+<div class="sg_wrapper--forms">
+{% endif %}
+
+<fieldset{{ attributes.addClass('m-form-group', classes) }}>
+
+  {#  Always wrap fieldset legends in a SPAN for CSS positioning. #}
+  <legend{{ legend.attributes.addClass('m-form-group__label') }}>
+    <span{{ legend_span.attributes.addClass('a-label', legend_span_classes) }}>{{ legend.title }}{% if required%}<span class='is-required'>*</span>{% endif %}</span>
+  </legend>
+
+  <div class="m-form-group__wrapper">
+    {% if prefix %}
+      <span class="m-form-group__prefix">{{ prefix }}</span>
+    {% endif %}
+
+    {% if children %}
+      <div class="m-form-group__elements">
+        {{ children }}
+      </div>
+    {% endif %}
+
+    {% if suffix %}
+      <span class="m-form-group__suffix">{{ suffix }}</span>
+    {% endif %}
+
+    {% if description.content %}
+      <div{{ description.attributes.addClass('m-form-group__description') }}>{{ description.content }}</div>
+    {% endif %}
+  </div>
+</fieldset>
+
+{% if sg_wrapper %}
+</div>
+{% endif %}

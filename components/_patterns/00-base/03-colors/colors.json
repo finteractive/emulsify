@@ -61,8 +61,16 @@
       "value": "#b9b9e2"
     },
     {
+      "name": "$red-light",
+      "value": "#ff3333"
+    },
+    {
       "name": "$red",
-      "value": "#a00000"
+      "value": "#ff0000"
+    },
+    {
+      "name": "$red-dark",
+      "value": "#cc0000"
     },
     {
       "name": "$facebook",

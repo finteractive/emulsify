@@ -1,0 +1,7 @@
+attributes:
+  Attribute():
+    class: ['a-input-submit--text']
+    type: submit
+    id: submit_input
+    name: submit_input
+    value: "No thanks, take me to my survey results »"
